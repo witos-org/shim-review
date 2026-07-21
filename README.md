@@ -87,7 +87,7 @@ Please upload the PGP keys to a well-known keyserver like keyserver.ubuntu.com a
 *******************************************************************************
 - Name: Cleith Security Team
 - Position: Cleith Security Team
-- Email address: security@cleith.dev
+- Email address: security@cleith.net
 - PGP key fingerprint: `4DBA270B0B7AEB6B481292696737D81B697FFB51`
 - File/keyserver location: available from keyserver.ubuntu.com
 
