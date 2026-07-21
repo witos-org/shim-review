@@ -13,9 +13,9 @@ RUN echo "46319cd228d8f2c06c744241c0f342412329a7c630436fce7f82cf6936b1d603  shim
 RUN sha256sum -c < SHA256SUM
 
 RUN mv shim-16.1.tar.bz2 shim_16.1.orig.tar.bz2
-run git clone https://git.witine.com/witos/shim.git
+RUN git clone https://git.witine.com/cleith/shim.git
 WORKDIR /shim
-RUN git checkout witos/16.1-2_wit1
+RUN git checkout cleith/16.1-2_cle1
 RUN ls -lha
 RUN apt-get build-dep -y .
 RUN dpkg-buildpackage -us -uc

@@ -60,12 +60,12 @@ Subject: SERIALNUMBER=13498267, C=GB, L=Saffron Walden, O=Witine Limited, CN=Wit
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-witOS, a high-performance open-source network operating system.
+Cleith, a high-performance open-source network operating system.
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
 *******************************************************************************
-witOS is a software product and therefore we do not control our users'
+Cleith is a software product and therefore we do not control our users'
 systems/hardware.
 
 *******************************************************************************
@@ -85,9 +85,9 @@ You will be asked to post the contents of these mails in your `shim-review` issu
 Please upload the PGP keys to a well-known keyserver like keyserver.ubuntu.com and/or include them in the review as an .asc file, and point to them here.
 
 *******************************************************************************
-- Name: witOS Security Team
-- Position: witOS Security Team
-- Email address: security@witos.dev
+- Name: Cleith Security Team
+- Position: Cleith Security Team
+- Email address: security@cleith.dev
 - PGP key fingerprint: `4DBA270B0B7AEB6B481292696737D81B697FFB51`
 - File/keyserver location: available from keyserver.ubuntu.com
 
@@ -140,7 +140,7 @@ Hint: If you attach all the patches and modifications that are being used to you
 
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
-https://git.witine.com/witos/shim/-/tree/witos/16.1-2_wit1?ref_type=tags
+https://git.witine.com/cleith/shim/-/tree/cleith/16.1-2_cle1?ref_type=tags
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -314,15 +314,15 @@ This is our first application.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 ```
-6bec6b2ff62c4ea41d124318267ad1762ad96630f379aee6de38c83299e6fc8f  /shim-review/shimx64.efi
+80c80abd5ebf70e3472ba0dcea31cd4d4c0b1479d36e9ea31606354128592673  /shim-review/shimx64.efi
 ```
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
 Describe the security strategy that is used for key protection. This can range from using hardware tokens like HSMs or Smartcards, air-gapped vaults, physical safes to other good practices.
 *******************************************************************************
-The key is stored and protected using the Azure Key Vault service in a FIPS
-140-2 Level 2 validated HSM with appropriate access control in place to prevent
+The key is stored and protected using the AWS Key Management Service in a FIPS
+140-3 Level 3 validated HSM with appropriate access control in place to prevent
 unauthorized access.
 
 *******************************************************************************
@@ -355,7 +355,7 @@ Shim:
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.witos,1,witOS,shim,16.1,mail:security@witos.dev
+shim.cleith,1,Cleith,shim,16.1,mail:security@cleith.net
 ```
 
 Grub:
@@ -365,14 +365,14 @@ grub,5,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
 grub.debian,5,Debian,grub2,2.12-9,https://tracker.debian.org/pkg/grub2
 grub.debian14,1,Debian,grub2,2.12-9,https://tracker.debian.org/pkg/grub2
 grub.peimage,2,Canonical,grub2,2.12-9,https://salsa.debian.org/grub-team/grub/-/blob/master/debian/patches/secure-boot/efi-use-peimage-shim.patch
-grub.witos,5,witOS,grub2,2.12-9,mail:security@witos.dev
+grub.cleith,1,Cleith,grub2,2.12-9,mail:security@cleith.net
 ```
 
 fwupd-efi:
 ```
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 fwupd-efi,1,Firmware update daemon,fwupd-efi,1.8,https://github.com/fwupd/fwupd-efi
-fwupd-efi.witos,1,witOS,fwupd,1:1.8-5+wit1,mail:security@witos.dev
+fwupd-efi.cleith,1,Cleith,fwupd,1:1.8-5+cle1,mail:security@cleith.net
 ```
 
 *******************************************************************************
@@ -442,7 +442,7 @@ A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us 
 For newcomers, the applications labeled as [*easy to review*](https://github.com/rhboot/shim-review/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+to+review%22) are recommended to start the contribution process.
 *******************************************************************************
 We have not participated in reviews at this time but intend to contribute
-moving forward
+moving forward.
 
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
