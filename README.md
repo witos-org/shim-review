@@ -314,7 +314,7 @@ This is our first application.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 ```
-80c80abd5ebf70e3472ba0dcea31cd4d4c0b1479d36e9ea31606354128592673  /shim-review/shimx64.efi
+01ee2bb93626e2c495a5aba88e4858e31a961fd5ef1cbfdc8a64569f8bc7e4c0  /shim-review/shimx64.efi
 ```
 
 *******************************************************************************
@@ -355,7 +355,7 @@ Shim:
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.cleith,1,Cleith,shim,16.1,mail:security@cleith.net
+shim.cleith,1,Witine Limited,shim,16.1,mail:security@witine.com
 ```
 
 Grub:
